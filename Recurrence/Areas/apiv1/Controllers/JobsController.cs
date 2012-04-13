@@ -6,9 +6,9 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using Recurrence.Models;
-
+using Recurrence;
 namespace Recurrence.Areas.apiv1.Controllers
-{ 
+{
     public class JobsController : Controller
     {
         private IDataRepository db = null;
@@ -41,27 +41,35 @@ namespace Recurrence.Areas.apiv1.Controllers
         public ActionResult Create()
         {
             return View();
-        } 
+        }
 
         //
         // POST: /apiv1/Jobs/Create
 
         [HttpPost]
-        public ActionResult Create(Job job)
+        public JsonNetResult Create(Job job)
         {
+            ModelState.Remove("Attempts");
             if (ModelState.IsValid)
             {
                 db.Jobs.Add(job);
                 db.SaveChanges();
-                return RedirectToAction("Index");  
+                return new JsonNetResult(new JobCreationResult()
+                {
+                    CreationSuccessful = true,
+                    Job = job,
+                    Message = "Job Created Successfully"
+                });
             }
-
-            return View(job);
+            else
+            {
+                return this.ErrorResult();
+            }
         }
-        
+
         //
         // GET: /apiv1/Jobs/Edit/5
- 
+
         public ActionResult Edit(int id)
         {
             Job job = db.Jobs.Find(id);
@@ -85,7 +93,7 @@ namespace Recurrence.Areas.apiv1.Controllers
 
         //
         // GET: /apiv1/Jobs/Delete/5
- 
+
         public ActionResult Delete(int id)
         {
             Job job = db.Jobs.Find(id);
@@ -97,7 +105,7 @@ namespace Recurrence.Areas.apiv1.Controllers
 
         [HttpPost, ActionName("Delete")]
         public ActionResult DeleteConfirmed(int id)
-        {            
+        {
             Job job = db.Jobs.Find(id);
             db.Jobs.Remove(job);
             db.SaveChanges();

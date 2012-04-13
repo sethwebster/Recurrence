@@ -42,6 +42,9 @@
       <Private>True</Private>
       <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
     </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.4.5.3\lib\net40\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="Ninject">
       <HintPath>..\packages\Ninject.3.0.0.15\lib\net40\Ninject.dll</HintPath>
     </Reference>
@@ -79,22 +82,34 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ActionResults\JsonNetActionResult.cs" />
     <Compile Include="App_Start\NinjectWebCommon.cs" />
     <Compile Include="Areas\apiv1\apiv1AreaRegistration.cs" />
     <Compile Include="Areas\apiv1\Controllers\JobsController.cs" />
+    <Compile Include="Extensions\ControllerExtensionMethods.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201204131611364_Initial.cs" />
-    <Compile Include="Migrations\201204131611364_Initial.Designer.cs">
-      <DependentUpon>201204131611364_Initial.cs</DependentUpon>
+    <Compile Include="Migrations\201204131628445_Initial.cs" />
+    <Compile Include="Migrations\201204131628445_Initial.Designer.cs">
+      <DependentUpon>201204131628445_Initial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201204131643041_AddedEnumWorkAround.cs" />
+    <Compile Include="Migrations\201204131643041_AddedEnumWorkAround.Designer.cs">
+      <DependentUpon>201204131643041_AddedEnumWorkAround.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201204131654144_AddedRequiredFields.cs" />
+    <Compile Include="Migrations\201204131654144_AddedRequiredFields.Designer.cs">
+      <DependentUpon>201204131654144_AddedRequiredFields.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\DataRepository.cs" />
     <Compile Include="Models\IDataRepository.cs" />
+    <Compile Include="Models\JobCreationResult.cs" />
     <Compile Include="Models\JobResult.cs" />
     <Compile Include="Models\Job.cs" />
     <Compile Include="Models\JobStatus.cs" />
+    <Compile Include="Models\ResultModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

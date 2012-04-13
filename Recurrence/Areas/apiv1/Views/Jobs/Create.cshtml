@@ -29,6 +29,13 @@
             @Html.EditorFor(model => model.Method)
             @Html.ValidationMessageFor(model => model.Method)
         </div>
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Endpoint)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Endpoint)
+            @Html.ValidationMessageFor(model => model.Endpoint)
+        </div>
 
         <div class="editor-label">
             @Html.LabelFor(model => model.Attempts)

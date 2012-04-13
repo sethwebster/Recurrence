@@ -13,6 +13,7 @@ namespace Recurrence.Migrations
                         JobId = c.Int(nullable: false, identity: true),
                         When = c.DateTimeOffset(nullable: false),
                         Method = c.String(),
+                        Endpoint = c.String(),
                         Attempts = c.Int(nullable: false),
                     })
                 .PrimaryKey(t => t.JobId);
