@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Recurrence", "Recurrence\Recurrence.csproj", "{9726223D-2B8D-47D8-868B-AF106B0521EE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Recurrence.JobManager", "..\Recurrence.JobManager\Recurrence.JobManager.csproj", "{822A0D22-C6C1-4A1C-8107-848C0CCF332A}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Recurrence.Data", "Recurrence.Data\Recurrence.Data.csproj", "{4F06FC0B-C501-407C-99C1-9179E7652514}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Recurrence.JobManager", "Recurrence.JobManager\Recurrence.JobManager.csproj", "{822A0D22-C6C1-4A1C-8107-848C0CCF332A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,14 +17,14 @@ Global
 		{9726223D-2B8D-47D8-868B-AF106B0521EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9726223D-2B8D-47D8-868B-AF106B0521EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9726223D-2B8D-47D8-868B-AF106B0521EE}.Release|Any CPU.Build.0 = Release|Any CPU
-		{822A0D22-C6C1-4A1C-8107-848C0CCF332A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{822A0D22-C6C1-4A1C-8107-848C0CCF332A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{822A0D22-C6C1-4A1C-8107-848C0CCF332A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{822A0D22-C6C1-4A1C-8107-848C0CCF332A}.Release|Any CPU.Build.0 = Release|Any CPU
 		{4F06FC0B-C501-407C-99C1-9179E7652514}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{4F06FC0B-C501-407C-99C1-9179E7652514}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4F06FC0B-C501-407C-99C1-9179E7652514}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4F06FC0B-C501-407C-99C1-9179E7652514}.Release|Any CPU.Build.0 = Release|Any CPU
+		{822A0D22-C6C1-4A1C-8107-848C0CCF332A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{822A0D22-C6C1-4A1C-8107-848C0CCF332A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{822A0D22-C6C1-4A1C-8107-848C0CCF332A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{822A0D22-C6C1-4A1C-8107-848C0CCF332A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
