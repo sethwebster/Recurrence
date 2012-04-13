@@ -49,6 +49,7 @@ namespace Recurrence.Areas.apiv1.Controllers
         [HttpPost]
         public JsonNetResult Create(Job job)
         {
+            //TODO: Figure out why Attepmts thinks its required
             ModelState.Remove("Attempts");
             if (ModelState.IsValid)
             {
