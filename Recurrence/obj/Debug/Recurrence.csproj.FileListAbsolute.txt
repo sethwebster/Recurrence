@@ -1,0 +1,7 @@
+E:\Users\Seth Webster\Documents\Visual Studio 2010\Projects\git\Recurrence\Recurrence\bin\Recurrence.dll
+E:\Users\Seth Webster\Documents\Visual Studio 2010\Projects\git\Recurrence\Recurrence\bin\Recurrence.pdb
+E:\Users\Seth Webster\Documents\Visual Studio 2010\Projects\git\Recurrence\Recurrence\bin\EntityFramework.dll
+E:\Users\Seth Webster\Documents\Visual Studio 2010\Projects\git\Recurrence\Recurrence\bin\EntityFramework.xml
+E:\Users\Seth Webster\Documents\Visual Studio 2010\Projects\git\Recurrence\Recurrence\obj\Debug\ResolveAssemblyReference.cache
+E:\Users\Seth Webster\Documents\Visual Studio 2010\Projects\git\Recurrence\Recurrence\obj\Debug\Recurrence.dll
+E:\Users\Seth Webster\Documents\Visual Studio 2010\Projects\git\Recurrence\Recurrence\obj\Debug\Recurrence.pdb
