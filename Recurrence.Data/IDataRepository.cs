@@ -4,8 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Data.Entity;
 using System.Data.Entity.Infrastructure;
+using Recurrence.Data.Models;
 
-namespace Recurrence.Models
+namespace Recurrence.Data
 {
     public interface IDataRepository : IDisposable
     {

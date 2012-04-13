@@ -4,15 +4,16 @@ namespace Recurrence.Migrations
     using System.Data.Entity;
     using System.Data.Entity.Migrations;
     using System.Linq;
+    using Recurrence.Data;
 
-    internal sealed class Configuration : DbMigrationsConfiguration<Recurrence.Models.DataRepository>
+    internal sealed class Configuration : DbMigrationsConfiguration<DataRepository>
     {
         public Configuration()
         {
             AutomaticMigrationsEnabled = false;
         }
 
-        protected override void Seed(Recurrence.Models.DataRepository context)
+        protected override void Seed(DataRepository context)
         {
             //  This method will be called after migrating to the latest version.
 

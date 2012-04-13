@@ -19,3 +19,5 @@ E:\Users\Seth Webster\Documents\Visual Studio 2010\Projects\git\Recurrence\Recur
 E:\Users\Seth Webster\Documents\Visual Studio 2010\Projects\git\Recurrence\Recurrence\bin\Newtonsoft.Json.dll
 E:\Users\Seth Webster\Documents\Visual Studio 2010\Projects\git\Recurrence\Recurrence\bin\Newtonsoft.Json.pdb
 E:\Users\Seth Webster\Documents\Visual Studio 2010\Projects\git\Recurrence\Recurrence\bin\Newtonsoft.Json.xml
+E:\Users\Seth Webster\Documents\Visual Studio 2010\Projects\git\Recurrence\Recurrence\bin\Recurrence.Data.dll
+E:\Users\Seth Webster\Documents\Visual Studio 2010\Projects\git\Recurrence\Recurrence\bin\Recurrence.Data.pdb

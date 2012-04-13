@@ -11,6 +11,7 @@ namespace Recurrence.App_Start
     using Ninject;
     using Ninject.Web.Common;
     using Recurrence.Models;
+    using Recurrence.Data;
 
     public static class NinjectWebCommon 
     {

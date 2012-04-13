@@ -7,6 +7,8 @@ using System.Web;
 using System.Web.Mvc;
 using Recurrence.Models;
 using Recurrence;
+using Recurrence.Data;
+using Recurrence.Data.Models;
 namespace Recurrence.Areas.apiv1.Controllers
 {
     public class JobsController : Controller

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace Recurrence.Models
+namespace Recurrence.Data.Models
 {
     public enum JobStatus : int
     {

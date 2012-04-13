@@ -90,25 +90,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201204131628445_Initial.cs" />
-    <Compile Include="Migrations\201204131628445_Initial.Designer.cs">
-      <DependentUpon>201204131628445_Initial.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201204131643041_AddedEnumWorkAround.cs" />
-    <Compile Include="Migrations\201204131643041_AddedEnumWorkAround.Designer.cs">
-      <DependentUpon>201204131643041_AddedEnumWorkAround.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201204131654144_AddedRequiredFields.cs" />
-    <Compile Include="Migrations\201204131654144_AddedRequiredFields.Designer.cs">
-      <DependentUpon>201204131654144_AddedRequiredFields.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\Configuration.cs" />
-    <Compile Include="Models\DataRepository.cs" />
-    <Compile Include="Models\IDataRepository.cs" />
     <Compile Include="Models\JobCreationResult.cs" />
-    <Compile Include="Models\JobResult.cs" />
-    <Compile Include="Models\Job.cs" />
-    <Compile Include="Models\JobStatus.cs" />
     <Compile Include="Models\ResultModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -199,6 +181,12 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Areas\apiv1\Views\Jobs\Delete.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Recurrence.Data\Recurrence.Data.csproj">
+      <Project>{4F06FC0B-C501-407C-99C1-9179E7652514}</Project>
+      <Name>Recurrence.Data</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />

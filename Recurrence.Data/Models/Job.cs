@@ -4,7 +4,7 @@ using System.Linq;
 using System.Web;
 using System.ComponentModel.DataAnnotations;
 
-namespace Recurrence.Models
+namespace Recurrence.Data.Models
 {
     public class Job
     {
