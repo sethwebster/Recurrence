@@ -1,0 +1,33 @@
+﻿@model Recurrence.Models.Job
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<fieldset>
+    <legend>Job</legend>
+
+    <div class="display-label">When</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.When)
+    </div>
+
+    <div class="display-label">Method</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Method)
+    </div>
+
+    <div class="display-label">Attempts</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Attempts)
+    </div>
+</fieldset>
+@using (Html.BeginForm()) {
+    <p>
+        <input type="submit" value="Delete" /> |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+}

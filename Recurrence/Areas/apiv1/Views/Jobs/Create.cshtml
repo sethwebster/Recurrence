@@ -1,0 +1,49 @@
+﻿@model Recurrence.Models.Job
+
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>Create</h2>
+
+<script src="@Url.Content("~/Scripts/jquery.validate.min.js")" type="text/javascript"></script>
+<script src="@Url.Content("~/Scripts/jquery.validate.unobtrusive.min.js")" type="text/javascript"></script>
+
+@using (Html.BeginForm()) {
+    @Html.ValidationSummary(true)
+    <fieldset>
+        <legend>Job</legend>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.When)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.When)
+            @Html.ValidationMessageFor(model => model.When)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Method)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Method)
+            @Html.ValidationMessageFor(model => model.Method)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Attempts)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Attempts)
+            @Html.ValidationMessageFor(model => model.Attempts)
+        </div>
+
+        <p>
+            <input type="submit" value="Create" />
+        </p>
+    </fieldset>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
